@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>中秋答题活动</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="hero">
+        <div class="moon"></div>
+        <h1>中秋节答题活动</h1>
+      </header>
+
+      <section class="controls">
+        <button id="start-mc" class="btn">Tandon CSSA问答</button>
+        <button id="start-riddle" class="btn">灯谜</button>
+      </section>
+
+      <section id="quiz" class="quiz hidden">
+        <div id="q-header" class="q-header">
+          <div class="q-info">
+            第 <span id="q-index">1</span> 题 / <span id="q-total">7</span>
+          </div>
+          <div id="live-score" class="live-score">已答对 0</div>
+        </div>
+        <div id="q-body" class="q-body"></div>
+        <div class="nav">
+          <button id="next" class="btn">下一题</button>
+        </div>
+      </section>
+
+      <section id="result" class="result hidden">
+        <h2>答题结果</h2>
+        <div id="score" class="score"></div>
+        <ol id="result-list" class="result-list"></ol>
+        <div class="actions">
+          <button id="retry" class="btn">再来一次</button>
+          <button id="home" class="btn secondary">回首页</button>
+        </div>
+      </section>
+
+      <footer class="foot">由 NYU Tandon CSSA 提供 · 祝大家中秋快乐 🌕</footer>
+    </main>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
