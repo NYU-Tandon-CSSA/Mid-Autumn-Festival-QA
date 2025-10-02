@@ -20,7 +20,7 @@ const MC_QUESTIONS = [
   {
     q: "CSSA 有几个部门？",
     choices: ["1", "3", "4", "5"],
-    a: "4",
+    a: "5",
   },
   {
     q: "以下哪个不是Tandon CSSA的部门？",
